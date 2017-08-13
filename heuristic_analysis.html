@@ -525,9 +525,49 @@ pre.editor-colors .fold-marker:after {
 <div style="page-break-before:always"></div>
 
 <h2 id="my-result">My result</h2>
-<h3 id="air-cargo-problem-1">Air Cargo Problem 1</h3>
+<h3 id="hands-on-with-my-pen">Hands on with my pen</h3>
+<h4 id="air-cargo-problem-1">Air Cargo Problem 1</h4>
+<ol>
+<li>Load(C2, P2, JFK)</li>
+<li>Load(C1, P1, SFO)</li>
+<li>Fly(P2, JFK, SFO)</li>
+<li>Unload(C2, P2, SFO)</li>
+<li>Fly(P1, SFO, JFK)</li>
+<li>Unload(C1, P1, JFK)</li>
+</ol>
+<h4 id="air-cargo-problem-2">Air Cargo Problem 2</h4>
+<ol>
+<li>Load(C3, P3, ATL)</li>
+<li>Fly(P3, ATL, SFO)</li>
+<li>Unload(C3, P3, SFO)</li>
+<li>Load(C2, P2, JFK)</li>
+<li>Fly(P2, JFK, SFO)</li>
+<li>Unload(C2, P2, SFO)</li>
+<li>Load(C1, P1, SFO)</li>
+<li>Fly(P1, SFO, JFK)</li>
+<li>Unload(C1, P1, JFK)</li>
+</ol>
+<h4 id="air-cargo-problem-3">Air Cargo Problem 3</h4>
+<ol>
+<li>Load(C2, P2, JFK)</li>
+<li>Fly(P2, JFK, ORD)</li>
+<li>Load(C4, P2, ORD)</li>
+<li>Fly(P2, ORD, SFO)</li>
+<li>Unload(C4, P2, SFO)</li>
+<li>Load(C1, P1, SFO)</li>
+<li>Fly(P1, SFO, ATL)</li>
+<li>Load(C3, P1, ATL)</li>
+<li>Fly(P1, ATL, JFK)</li>
+<li>Unload(C3, P1, JFK)</li>
+<li>Unload(C1, P1, JFK)</li>
+<li>Unload(C2, P2, SFO)<div style="page-break-before:always"></div>
+
+</li>
+</ol>
+<h3 id="computed-result">Computed Result</h3>
+<h4 id="air-cargo-problem-1">Air Cargo Problem 1</h4>
 <p><img src="D:\workspace\src\trunk\Udacity\AIND-Planning\images\image1.JPG" alt="image1"></p>
-<h4 id="comments">Comments</h4>
+<h5 id="comments">Comments</h5>
 <ul>
 <li>&quot;depth_limited_search&quot; and &quot;depth_first_graph_search&quot; are not optimally, because it could not find plan of length 6.</li>
 <li>&quot;recursive_best_first_search&quot; takes time to get solution, it might be this problem is not only based on the cost of deistance, so if we improve this, we should take the other cost value.</li>
@@ -535,9 +575,9 @@ pre.editor-colors .fold-marker:after {
 
 </li>
 </ul>
-<h3 id="air-cargo-problem-2">Air Cargo Problem 2</h3>
+<h4 id="air-cargo-problem-2">Air Cargo Problem 2</h4>
 <p><img src="D:\workspace\src\trunk\Udacity\AIND-Planning\images\image2.JPG" alt="image2"></p>
-<h4 id="comments">Comments</h4>
+<h5 id="comments">Comments</h5>
 <ul>
 <li>&quot;breadth_first_tree_search&quot;, &quot;depth_limited_search&quot; and &quot;recursive_best_first_search&quot; could not reach to the solution for calculation time.</li>
 <li>&quot;depth_first_graph_search&quot; and &quot;greedy_best_first_graph_search&quot; could not take the optimal solution which is 9 length, because the problem space is more bigger than Problem 1.</li>
@@ -546,8 +586,9 @@ pre.editor-colors .fold-marker:after {
 
 </li>
 </ul>
-<h3 id="air-cargo-problem-3">Air Cargo Problem 3</h3>
+<h4 id="air-cargo-problem-3">Air Cargo Problem 3</h4>
 <p><img src="D:\workspace\src\trunk\Udacity\AIND-Planning\images\image3.JPG" alt="image3"></p>
+<h5 id="comments">Comments</h5>
 <ul>
 <li>&quot;breadth_first_tree_search&quot;, &quot;depth_limited_search&quot; and &quot;recursive_best_first_search&quot; could not reach to the solution for calculation time.</li>
 <li>&quot;depth_first_graph_search&quot; and &quot;greedy_best_first_graph_search&quot; could not take the optimal solution which is 12 length, because the problem space is more bigger than Problem 1.</li>

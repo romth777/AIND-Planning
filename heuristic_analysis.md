@@ -18,25 +18,62 @@ There are two types of algorithms, one is Uninformed, and the other is Informed.
 <div style="page-break-before:always"></div>
 
 ## My result
-### Air Cargo Problem 1
+### Hands on with my pen
+#### Air Cargo Problem 1
+  1. Load(C2, P2, JFK)
+  1. Load(C1, P1, SFO)
+  1. Fly(P2, JFK, SFO)
+  1. Unload(C2, P2, SFO)
+  1. Fly(P1, SFO, JFK)
+  1. Unload(C1, P1, JFK)
+
+#### Air Cargo Problem 2
+  1. Load(C3, P3, ATL)
+  1. Fly(P3, ATL, SFO)
+  1. Unload(C3, P3, SFO)
+  1. Load(C2, P2, JFK)
+  1. Fly(P2, JFK, SFO)
+  1. Unload(C2, P2, SFO)
+  1. Load(C1, P1, SFO)
+  1. Fly(P1, SFO, JFK)
+  1. Unload(C1, P1, JFK)
+
+#### Air Cargo Problem 3
+  1. Load(C2, P2, JFK)
+  1. Fly(P2, JFK, ORD)
+  1. Load(C4, P2, ORD)
+  1. Fly(P2, ORD, SFO)
+  1. Unload(C4, P2, SFO)
+  1. Load(C1, P1, SFO)
+  1. Fly(P1, SFO, ATL)
+  1. Load(C3, P1, ATL)
+  1. Fly(P1, ATL, JFK)
+  1. Unload(C3, P1, JFK)
+  1. Unload(C1, P1, JFK)
+  1. Unload(C2, P2, SFO)
+<div style="page-break-before:always"></div>
+
+### Computed Result
+#### Air Cargo Problem 1
 ![image1](images/image1.JPG)
-#### Comments
+##### Comments
  * "depth_limited_search" and "depth_first_graph_search" are not optimally, because it could not find plan of length 6.
  * "recursive_best_first_search" takes time to get solution, it might be this problem is not only based on the cost of deistance, so if we improve this, we should take the other cost value.
  * The other search method looks good to me especially "breadth_first_search" and "astar_search" looks optimal.
 <div style="page-break-before:always"></div>
 
-### Air Cargo Problem 2
+#### Air Cargo Problem 2
 ![image2](images/image2.JPG)
-#### Comments
+##### Comments
  * "breadth_first_tree_search", "depth_limited_search" and "recursive_best_first_search" could not reach to the solution for calculation time.
  * "depth_first_graph_search" and "greedy_best_first_graph_search" could not take the optimal solution which is 9 length, because the problem space is more bigger than Problem 1.
  * "astar_search with h_pg_levelsum" could reach the optimal solution, however the elapsed time to get there is delayed.
  * The other search method looks nice to me especially "astar_search with h_ignore_preconditions" looks optimal.
 <div style="page-break-before:always"></div>
 
-### Air Cargo Problem 3
+#### Air Cargo Problem 3
 ![image3](images/image3.JPG)
+##### Comments
 * "breadth_first_tree_search", "depth_limited_search" and "recursive_best_first_search" could not reach to the solution for calculation time.
 * "depth_first_graph_search" and "greedy_best_first_graph_search" could not take the optimal solution which is 12 length, because the problem space is more bigger than Problem 1.
 * "astar_search with h_pg_levelsum" could reach the optimal solution, however the elapsed time to get there is delayed.
