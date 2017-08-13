@@ -83,4 +83,7 @@ There are two types of algorithms, one is Uninformed, and the other is Informed.
 ## Conclusion
  * The most recommendable algorithm is "astar_search with h_pg_levelsum" in reaching to the optimal solution and time elapsed.
  * The other method which can take in the solution seems like a good but the time is not optimal in this experiments.
- * In all cases, "depth_first_graph_search" and "depth_limited_search" could not reach the optimal solutions. I think this is because depth first search algorithm is not suitable for this type of problem. This type of problem can take many patterns and deeper nodes with the meaningless movement of airplane i.g. "To make a round-trip unnecessarily." That's why the optimal solution is not in the thick node of the problem space, and the depth first search did not work well on this issue.
+ * In all cases, "depth_first_graph_search" and "depth_limited_search" could not reach the optimal solutions. I think this is because depth first search algorithm is not suitable for this problem. This problem can take many patterns as a depth of node and nodes can become deeper with the action of the meaningless movement of airplane e.g. "To make a round-trip unnecessarily." That's why the optimal solution is not in the thick node of the problem space, and the depth first search did not work well on this issue. However, depth first search is suitable for the tree which has the narrow width.
+
+ ## Reference
+  * https://www.youtube.com/watch?v=4KHmQEoqmeI
